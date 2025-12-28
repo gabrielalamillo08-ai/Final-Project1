@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library System</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2a3f54;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.4rem;
+    }
+
+    .hero {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 20px;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #2a3f54;
+    }
+    section p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .signin-form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .signin-form h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #2a3f54;
+    }
+    .signin-form label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+    }
+    .signin-form input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .signin-form button {
+      width: 100%;
+      padding: 12px;
+      background: #2a3f54;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .signin-form button:hover {
+      background: #1f2c3a;
+    }
+
+    @media (min-width: 600px) {
+      header h1 { font-size: 3rem; }
+      section h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Library System</h1>
+    <p>Welcome to our digital library experience</p>
+  </header>
+
+  <!-- Hero/slider placeholder -->
+  <div class="hero">
+    <img src="images/slide1.jpg" alt="Library Interior">
+    <img src="images/slide2.jpg" alt="Students Reading">
+    <img src="images/slide3.jpg" alt="Books Shelf">
+  </div>
+
+  <main>
+    <section>
+      <h2>About Our Library</h2>
+      <p>Explore books, reserve seats, and read online anytime.</p>
+    </section>
+
+    <section>
+      <h2>Book a Seat</h2>
+      <p>Reserve your favorite spot in the library hassle-free.</p>
+    </section>
+
+    <section>
+      <h2>Read Digitally</h2>
+      <p>Access thousands of e-books directly from your device.</p>
+    </section>
+
+    <section>
+      <h2>Enjoy Your Time</h2>
+      <p>Relax, study, or explore new subjects in a comfortable environment.</p>
+    </section>
+
+    <!-- Sign-In Form -->
+    <div class="signin-form">
+      <h3>Sign In</h3>
+      <form>
+        <label for="email">Email or Phone Number</label>
+        <input type="text" id="email" name="email" placeholder="Enter email or phone">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
